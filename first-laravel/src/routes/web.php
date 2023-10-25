@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+Route::get('/test/{room}/{id}', function ($room, $id) {
+    return 'roomが' . $room . 'でidは' . $id . 'です';
+});
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +16,3 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
